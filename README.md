@@ -96,20 +96,17 @@ This repository contains research artifacts for academic documentation and refer
 Experimental notebooks developed in Google Colab environment:
 
 **Preprocessing:**
-- `01_preprocessing_m1_raw.ipynb` - Methodology 1 (minimal preprocessing, 384x384 RGB)
-- `02_preprocessing_m2_face.ipynb` - Methodology 2 (face-aware preprocessing, 224x224 grayscale, Dlib detection)
+- `01_01_EDA_CASME2-AF.ipynb` - Methodology 1 (minimal preprocessing, 384x384 RGB)
+- `01_04_EDA_CASME2-PREP.ipynb` - Methodology 2 (face-aware preprocessing, 224x224 grayscale, Dlib detection)
 
 **Model Training - Apex Frame Phase:**
-- `03_vit_apex_frame.ipynb` - ViT-patch32 training (baseline, best single-frame: F1=0.4235)
-- `04_swin_apex_frame.ipynb` - Swin Transformer-base training
-- `05_poolformer_apex_frame.ipynb` - PoolFormer-m36/m48 training
+- `02_01_ViT_CASME2-AF.ipynb` - ViT-patch32 training (baseline, best single-frame: F1=0.4235)
+- `02_02_SwinT_CASME2-AF.ipynb` - Swin Transformer-base training
+- `02_05_PoolFormer_CASME2-AF.ipynb` - PoolFormer-m36/m48 training
 
 **Temporal Aggregation:**
-- `06_temporal_kfs.ipynb` - Key Frame Sequence (onset-apex-offset, 3x expansion)
-- `07_temporal_mfs.ipynb` - Multi-Frame Sampling (adaptive windowing, 10.25x expansion)
-
-**Evaluation:**
-- `08_evaluation_visualization.ipynb` - Metrics computation, confusion matrix, bootstrap confidence intervals
+- `03_03_PoolFormer_CASME2-KFS.ipynb` - Key Frame Sequence (onset-apex-offset, 3x expansion)
+- `04_03_PoolFormer_CASME2-MFS.ipynb` - Multi-Frame Sampling (adaptive windowing, 10.25x expansion)
 
 ### Figures
 
@@ -117,9 +114,7 @@ High-resolution figures from the published paper:
 - Experimental framework illustration
 - Preprocessing paradox visualization (quality vs performance)
 - Temporal aggregation performance trajectories
-- Architecture comparison across phases
 - Confusion matrices for best models
-- Per-class F1-score comparisons
 
 ---
 
